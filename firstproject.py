@@ -6,7 +6,6 @@ def two_number():
 
     first_user_input = input("First Word: ")
     second_user_input = input("Second Word: ")
-
     try:
 
         first_convert = w2n.word_to_num(first_user_input)
@@ -28,3 +27,7 @@ def two_number():
     print("Result:", result)
 
 two_number()
+
+
+def two_num():
+    pass
