@@ -7,8 +7,14 @@ def two_number():
     first_user_input = input("First Word: ")
     second_user_input = input("Second Word: ")
 
-    first_convert = w2n.word_to_num(first_user_input)
-    second_convert = w2n.word_to_num(second_user_input)
+    try:
+
+        first_convert = w2n.word_to_num(first_user_input)
+        second_convert = w2n.word_to_num(second_user_input)
+
+    except ValueError:
+        print("\nError: Please enter valid number words (e.g., 'twenty', 'five').")
+        return
 
     total = first_convert + second_convert
 
