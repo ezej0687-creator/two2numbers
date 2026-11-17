@@ -58,18 +58,26 @@ def find_num():
     first_number = []
     second_number = []
     
+    first_num = []
+    
     for i in first_user.split("-"):
         for key, value in NUM_WORDS.items():
             if value == i:
                 first_number.append(key)
+            elif key >= 1000:
+                first_num.append(key)
                 break
-            
+    print(first_number)       
     first_result = 0
     
     for v in first_number:
         first_result += v
+    
+    
+    for k in first_num:
+            first_result = first_number[0] * k
+        
     print(first_result)
-            
             
         
     for j in second_user.split("-"):
